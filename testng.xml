@@ -1,0 +1,86 @@
+<suite name="Global test Suite" verbose="1">
+    <test name="ParticularTest" group-by-instances="true">
+
+    This parameter will be passed to every test in this suite
+    <parameter name="apikey" value="9c61245fd1113728141e677b2f705aef"/>
+     <parameter name="baseurl" value="https://api.themoviedb.org/3/authentication/token/new" />
+	<classes>
+		<class name="themoviedb.org.projecttest.AuthenticationTests" />
+		<methods>
+			<include name="authenticationHappyPath" />
+		</methods>
+	</classes>
+  </test>
+  
+   <test name="Authentication with invalid key">
+     This parameter will be passed this test only
+     <parameter name="invalidapikey" value="9c61245fd1113728141e677b2f705ae" />
+     <parameter name="baseurl" value="https://api.themoviedb.org/3/authentication/token/new" />
+      
+     <classes>
+         <class name="themoviedb.org.projecttest.AuthenticationTests">
+             <methods>
+                 <include name="authenticationInvalidKey" />
+             </methods>
+       </class>
+       </classes>
+     </test>>
+   <test name="Check request token">
+     This parameter will be passed this test only
+    <parameter name="apikey" value="9c61245fd1113728141e677b2f705aef"/>
+    <parameter name="baseurl" value="https://api.themoviedb.org/" />
+    
+    
+     <classes>
+         <class name="themoviedb.org.projecttest.AuthenticationTests">
+             <methods>
+                 <include name="checkRequestToken" />
+             </methods>
+       </class>
+       </classes>
+     </test>>
+     
+    <test name="Check Movie Request ok">
+     This parameter will be passed this test only
+    <parameter name="apikey" value="9c61245fd1113728141e677b2f705aef"/>
+    <parameter name="baseurl" value="https://api.themoviedb.org/" />
+    
+    
+     <classes>
+         <class name="themoviedb.org.projecttest.OneMovieSmokeTest">
+             <methods>
+                 <include name="movieRequestok" />
+             </methods>
+       </class>
+       </classes>
+     </test>>
+     <test name="Check Movie Data ">
+     This parameter will be passed this test only
+    <parameter name="apikey" value="9c61245fd1113728141e677b2f705aef"/>
+    <parameter name="baseurl" value="https://api.themoviedb.org/3/movie/550" />
+    
+     <classes>
+         <class name="themoviedb.org.projecttest.OneMovieSmokeTest">
+             <methods>
+                 <include name="movieData" />
+             </methods>
+       </class>
+       </classes>
+     </test>>
+     
+          <test name="Create session id and Update user info scenarios ">
+     This parameter will be passed this test only
+    <parameter name="apikey" value="9c61245fd1113728141e677b2f705aef"/>
+    <parameter name="baseurl" value="https://api.themoviedb.org/3/movie/550" />
+    
+     <classes>
+         <class name="themoviedb.org.projecttest.Userprofile">
+             <methods>
+                 <include name="movieData" />
+             </methods>
+       </class>
+       </classes>
+     </test>>
+     
+     
+</suite>

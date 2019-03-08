@@ -1,0 +1,5 @@
+Clone/download the files
+Import the project as a maven project into eclipse.
+Do a "mvn clean install" through terminal
+Right click on the testng.xml and choose " Run as Testng Suite"
+Alternatively can also right click and select " Run as >> Testng Test"

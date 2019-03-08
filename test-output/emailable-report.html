@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">ParticularTest</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">Authentication with invalid key</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Check request token</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">1.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">Check Movie Request ok</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Check Movie Data </td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">Create session id and Update user info scenarios </td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">13.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">6</td><td class="numi">6</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">17.7 seconds</td><td colspan="2">&nbsp;</td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">ParticularTest &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">themoviedb.org.projecttest.AuthenticationTests</td><td><a href="#m1"><b>authenticationHappyPath</b>  </a></td><td class="numi">1</td><td>1552033849181</td><td class="numi">510</td></tr>
+<tr><th colspan="4">Authentication with invalid key &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">themoviedb.org.projecttest.AuthenticationTests</td><td><a href="#m2"><b>authenticationInvalidKey</b>  </a></td><td class="numi">1</td><td>1552033849877</td><td class="numi">423</td></tr>
+<tr><th colspan="4">Check request token &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">themoviedb.org.projecttest.AuthenticationTests</td><td><a href="#m3"><b>checkRequestToken</b>  </a></td><td class="numi">1</td><td>1552033850306</td><td class="numi">1930</td></tr>
+<tr><th colspan="4">Check Movie Request ok &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">themoviedb.org.projecttest.OneMovieSmokeTest</td><td><a href="#m4"><b>movieRequestok</b>  </a></td><td class="numi">1</td><td>1552033852241</td><td class="numi">835</td></tr>
+<tr><th colspan="4">Check Movie Data  &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">themoviedb.org.projecttest.OneMovieSmokeTest</td><td><a href="#m5"><b>movieData</b>  </a></td><td class="numi">1</td><td>1552033853081</td><td class="numi">688</td></tr>
+<tr><th colspan="4">Create session id and Update user info scenarios  &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">themoviedb.org.projecttest.Userprofile</td><td><a href="#m6"><b>UserprofileUpdate</b>  </a></td><td class="numi">1</td><td>1552033853774</td><td class="numi">12221</td></tr>
+<tr><th colspan="4">Create session id and Update user info scenarios  &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">themoviedb.org.projecttest.Userprofile</td><td><a href="#m7"><b>UserprofileUpdatewihtoutapproval</b>  </a></td><td class="numi">1</td><td>1552033865998</td><td class="numi">866</td></tr>
+</table>
+<h1>ParticularTest</h1>
+<h2 id="m1">themoviedb.org.projecttest.AuthenticationTests:authenticationHappyPath</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>9c61245fd1113728141e677b2f705aef</td>
+<td>https://api.themoviedb.org/3/authentication/token/new</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Authentication with invalid key</h1>
+<h2 id="m2">themoviedb.org.projecttest.AuthenticationTests:authenticationInvalidKey</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>9c61245fd1113728141e677b2f705ae</td>
+<td>https://api.themoviedb.org/3/authentication/token/new</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Check request token</h1>
+<h2 id="m3">themoviedb.org.projecttest.AuthenticationTests:checkRequestToken</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>9c61245fd1113728141e677b2f705aef</td>
+<td>https://api.themoviedb.org/</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Check Movie Request ok</h1>
+<h2 id="m4">themoviedb.org.projecttest.OneMovieSmokeTest:movieRequestok</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>9c61245fd1113728141e677b2f705aef</td>
+<td>https://api.themoviedb.org/</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Check Movie Data </h1>
+<h2 id="m5">themoviedb.org.projecttest.OneMovieSmokeTest:movieData</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>9c61245fd1113728141e677b2f705aef</td>
+<td>https://api.themoviedb.org/3/movie/550</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Create session id and Update user info scenarios </h1>
+<h2 id="m6">themoviedb.org.projecttest.Userprofile:UserprofileUpdate</h2>
+<div style="padding-left:3em">
+<p>1 expectation failed.
+JSON path status_message doesn&apos;t match.
+Expected: is &quot;Success&quot;
+  Actual: Invalid API key: You must be granted a valid key.
+</p>
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+<br/>at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+<br/>at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+<br/>at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+<br/>at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:238)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:250)
+<br/>at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:494)
+<br/>at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+<br/>at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:656)
+<br/>at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br/>at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+<br/>at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+<br/>at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:169)
+<br/>at io.restassured.internal.ResponseSpecificationImpl.content(ResponseSpecificationImpl.groovy:277)
+<br/>at io.restassured.specification.ResponseSpecification$content$0.callCurrent(Unknown Source)
+<br/>at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+<br/>at io.restassured.specification.ResponseSpecification$content$0.callCurrent(Unknown Source)
+<br/>at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:260)
+<br/>at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:274)
+<br/>at themoviedb.org.projecttest.Userprofile.UserprofileUpdate(Userprofile.java:75)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">themoviedb.org.projecttest.Userprofile:UserprofileUpdatewihtoutapproval</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

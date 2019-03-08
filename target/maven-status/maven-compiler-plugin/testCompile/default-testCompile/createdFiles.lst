@@ -1,0 +1,5 @@
+themoviedb/org/projecttest/SearchResults.class
+themoviedb/org/projecttest/helpers/createSessionid.class
+themoviedb/org/projecttest/Userprofile.class
+themoviedb/org/projecttest/AuthenticationTests.class
+themoviedb/org/projecttest/OneMovieSmokeTest.class

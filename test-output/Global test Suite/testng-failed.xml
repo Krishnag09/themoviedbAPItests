@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Global test Suite]">
+  <parameter name="invalidapikey" value="9c61245fd1113728141e677b2f705ae"/>
+  <parameter name="baseurl" value="https://api.themoviedb.org/3/movie/550"/>
+  <parameter name="apikey" value="9c61245fd1113728141e677b2f705aef"/>
+  <test name="Create session id and Update user info scenarios (failed)">
+    <parameter name="baseurl" value="https://api.themoviedb.org/3/movie/550"/>
+    <parameter name="apikey" value="9c61245fd1113728141e677b2f705aef"/>
+    <classes>
+      <class name="themoviedb.org.projecttest.Userprofile">
+        <methods>
+          <include name="UserprofileUpdate"/>
+        </methods>
+      </class> <!-- themoviedb.org.projecttest.Userprofile -->
+    </classes>
+  </test> <!-- Create session id and Update user info scenarios (failed) -->
+</suite> <!-- Failed suite [Global test Suite] -->
